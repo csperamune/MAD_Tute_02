@@ -2,6 +2,7 @@ package com.example.intentsproj;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,6 +20,8 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
+        Intent myintent = new Intent();
+        v3 = myintent.getStringExtra("Value1");
 
     }
 }
